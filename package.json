@@ -1,10 +1,25 @@
 {
     "name": "remark-highlight",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "type": "module",
     "engines": {
         "node": ">=18"
     },
+    "author": {
+        "name": "Mikaleb",
+        "url": "https://github.com/Mikaleb"
+    },
+    "repository": {
+        "url": "https://github.com/Mikaleb/remark-highlight",
+        "directory": "github",
+        "type": "git"
+    },
+    "contributors": [
+        {
+            "name": "Mikaleb",
+            "url": "https://github.com/Mikaleb"
+        }
+    ],
     "description": "highlight transformer plugin for Remark",
     "exports": {
         ".": {
@@ -51,13 +66,14 @@
     },
     "devDependencies": {
         "@eslint/js": "^9.2.0",
-        "@types/eslint__js": "^8.42.3",
         "@types/eslint-config-prettier": "^6.11.3",
         "@types/eslint-plugin-mocha": "^10.4.0",
         "@types/eslint-plugin-security": "^3.0.0",
+        "@types/eslint__js": "^8.42.3",
         "@types/mocha": "^10.0.6",
         "@types/node": "^20.12.12",
         "concurrently": "^8.2.2",
+        "cz-conventional-changelog": "^3.3.0",
         "eslint": "^8.52.0",
         "eslint-config-prettier": "^9.1.0",
         "eslint-plugin-mocha": "^10.4.3",
@@ -76,5 +92,10 @@
         "remark-rehype": "^11.1.0",
         "typescript": "^5.4.5",
         "typescript-eslint": "^7.9.0"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
     }
 }
