@@ -10,6 +10,7 @@ import security from 'eslint-plugin-security';
 export default ts.config(
     eslint.configs.recommended,
     ...ts.configs.recommendedTypeChecked,
+    // @ts-expect-error config flat is not up to date but no time to check for now
     n.configs['flat/recommended-module'],
     security.configs.recommended,
     configPrettier,
